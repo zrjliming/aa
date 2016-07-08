@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@android:id/tabhost">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@android:id/tabcontent"></FrameLayout>
+            <TabWidget
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@android:id/tabs"
+                android:visibility="gone"></TabWidget>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/rg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rb1"
+                    android:text="主页"
+                    android:button="@null"
+                    android:gravity="center"
+                    />
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rb2"
+                    android:text="讨论"
+                    android:button="@null"
+                    android:gravity="center"
+                    />
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rb3"
+                    android:text="收藏"
+                    android:button="@null"
+                    android:gravity="center"
+                    />
+            </RadioGroup>
+            
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

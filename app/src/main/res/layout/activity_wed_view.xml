@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ruijie.myapplication.mywebview.WedViewActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onbutton"
+        android:text="网络"
+        android:id="@+id/bt"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bt"
+        android:id="@+id/bt2"
+        android:text="web调用js"
+        android:onClick="onjs"/>
+    <WebView
+        android:layout_above="@id/bt2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/wv"></WebView>
+
+</LinearLayout>

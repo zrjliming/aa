@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Insert title here</title>
+
+    <script type="text/javascript">
+
+	function testAlert(){
+		
+		alert("弹出框");
+	}
+	
+	function testConfirm(){
+		
+		var r = confirm("确认框");
+		alert(r);
+	}
+	
+	function testPrompt(){
+		
+		var r =prompt("输入框","tom");
+		alert(r);
+	}
+
+	
+	function testJscallJava(){
+	
+	javascript:window.javaCode.toast("我来自Js");
+	
+	}
+	
+	function testJavaCallJs(){
+
+		alert("java调用js");
+	}
+	
+	
+    
+	
+
+    </script>
+
+
+</head>
+<body>
+<input type="button" onclick="testAlert();" value="testAlert"/> <br/>
+<input type="button" onclick="testConfirm();" value="testconfirm"/> <br/>
+<input type="button" onclick="testPrompt();" value="testPrompt"/> <br/>
+
+
+<input type="button" onclick="testJscallJava();" value="testJscallJava"/> <br/>
+
+</body>
+</html>
